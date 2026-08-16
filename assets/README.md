@@ -1,21 +1,26 @@
-# 3D Game Generalist Portfolio — V5 Job-Ready
+# Sean Wang — 3D Game Generalist Portfolio V6
 
-## What changed
-- Added the uploaded **My Tiny Tower gameplay demo**.
-- Web-optimized the Tower video to approximately **1.4 MB**.
-- Rewrote the homepage positioning for overseas job applications:
-  - shipped commercial experience first
-  - end-to-end art ownership
-  - Unity implementation, art QA and mobile optimization
-- Reworked **Sunshine Power** and **Shooting Inc** into complete text-first commercial case studies.
-- No placeholder/fake project imagery is used for those two projects.
-- Existing gameplay videos, UI, runtime statistics, proof images and safe wireframe views are retained.
+Application-ready public portfolio.
+
+## Added in V6
+- Real identity: Sean Wang
+- Real contact email
+- English Resume PDF linked from navigation, hero, About and Contact
+- About / positioning section
+- Consistent My Role / Key Contributions / Tools blocks
+- Complete text-first case studies for Sunshine Power and Shooting Range Inc
+- Dedicated Mobile Optimization Case Study (~300 → ~150 Batches)
+- Previous 3D Designer experience
+- Shooting Range Inc metrics synchronized with the latest resume:
+  - 1M+ downloads
+  - ~$0.51 initial CPI
+  - ~36.5% D1 retention
+  - ~30 min D1 session length
+- Removed fake social-profile placeholders
+- Added basic Open Graph metadata
 
 ## GitHub Pages update
-Replace these items in your `portfolio` repository:
-- `index.html`
-- `styles.css`
-- `script.js`
-- entire `assets/` folder
+Replace the contents of your `portfolio` repository with all files in this package.
+The Resume PDF must stay in the repository root because the website links to it directly.
 
-Then commit and wait for GitHub Pages to redeploy.
+Your existing GitHub Pages URL remains unchanged.
