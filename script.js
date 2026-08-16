@@ -31,3 +31,13 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+// Keep playback tidy on a portfolio page: starting one clip pauses the others.
+const portfolioVideos = [...document.querySelectorAll("video")];
+portfolioVideos.forEach(video => {
+  video.addEventListener("play", () => {
+    portfolioVideos.forEach(other => {
+      if (other !== video && !other.paused) other.pause();
+    });
+  });
+});
