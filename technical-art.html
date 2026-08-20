@@ -3,48 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Technical Art Case | Sean Wang</title>
+<meta name="description" content="Sean Wang - Unity mobile technical art and optimization case covering Frame Debugger, batching, draw calls, meshes, materials and performance troubleshooting." />
+<title>Technical Art & Unity Optimization | Sean Wang</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="topbar shell">
+  <a class="brand" href="index.html#top">SEAN WANG <span>GAME ART</span></a>
+  <nav class="nav-links"><a href="index.html">Home</a><a href="index.html#optimization">Optimization</a><a href="ai-workflow.html">AI Workflow</a><a href="https://xbin1678145314-spec.github.io/portfolio-cn/technical-art.html">中文</a></nav>
+</header>
 <main class="section shell">
-<h1>Unity Mobile Optimization Case Study</h1>
-<p>Performance optimization experience for mobile casual game projects, focusing on rendering cost analysis, asset structure and Unity implementation.</p>
+  <p class="kicker">UNITY MOBILE · FRAME DEBUGGER · BATCHING · ART-SIDE PERFORMANCE</p>
+  <h1>Unity Mobile Technical Art & Optimization</h1>
+  <p>My technical-art work is currently focused on art-side mobile optimization: locating rendering problems, understanding why Batches or draw calls increase, adjusting assets and materials, and working with programmers when a code-side implementation is required.</p>
 
-<h2>Problem</h2>
-<p>Mobile scenes with many objects and materials can increase rendering cost and affect performance.</p>
+  <div class="case-grid">
+    <article><strong>Diagnosis</strong><p>Unity Stats and Frame Debugger are used to identify repeated draws, material changes, batching breaks and unnecessary rendering work.</p></article>
+    <article><strong>Asset-side fixes</strong><p>Mesh simplification, material consolidation, texture control, scene organization and transparent-material review are applied where appropriate.</p></article>
+    <article><strong>Programmer collaboration</strong><p>When batching, runtime mesh combination, visibility control or other implementation changes require code, I provide the visual/performance requirement and verify the result.</p></article>
+  </div>
 
-<h2>Analysis</h2>
-<ul>
-<li>Unity Stats inspection</li>
-<li>Frame Debugger analysis</li>
-<li>Review of materials, meshes and draw calls</li>
-<li>Identify unnecessary rendering overhead</li>
-</ul>
-
-<h2>Optimization Process</h2>
-<pre>
+  <h2>Typical analysis flow</h2>
+  <pre>
 Performance Issue
         ↓
-Rendering Analysis
+Unity Stats / Frame Debugger
         ↓
-Mesh / Material Optimization
+Identify Draw / Material / Mesh Cause
         ↓
-Batching Improvement
+Art-side or Programmer-side Solution
         ↓
-Performance Validation
-</pre>
+Unity Validation
+  </pre>
 
-<h2>Optimization Result</h2>
-<p>Reduced one high-instance scene from approximately 300 batches to approximately 150 while maintaining the intended visual quality.</p>
+  <h2>Case: high-instance scene</h2>
+  <p>A scene reached approximately 300 Batches. After reviewing mesh complexity, materials and batching conditions, I simplified the relevant assets and worked with the programmer on batching changes. The scene was reduced to approximately 150 Batches while preserving the intended visual result.</p>
 
-<h2>Skills Demonstrated</h2>
-<ul>
-<li>Mobile performance awareness</li>
-<li>Unity rendering workflow understanding</li>
-<li>Art asset optimization</li>
-<li>Communication with programmers for implementation solutions</li>
-</ul>
+  <h2>Other optimization problems I review</h2>
+  <ul>
+    <li>Different meshes and materials preventing efficient batching.</li>
+    <li>Transparent preview materials causing a large increase in Batches and overdraw.</li>
+    <li>Large construction scenes with many visible objects at the same time.</li>
+    <li>Camera view range increasing the amount of rendered scene content.</li>
+    <li>Texture size, mesh density, material count and unnecessary multi-material setups.</li>
+    <li>Visual QA after implementation to confirm the optimization did not damage presentation.</li>
+  </ul>
+
+  <h2>Current technical direction</h2>
+  <p>I am continuing to deepen my understanding of Unity rendering fundamentals, Shader Graph, URP, CPU/GPU responsibilities, transparency, depth and render queues so that I can move from practical optimization toward a stronger art-focused Technical Artist role.</p>
+
+  <p><a class="btn primary" href="index.html#optimization">Back to portfolio</a></p>
 </main>
 </body>
 </html>
